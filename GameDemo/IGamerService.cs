@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameDemo
 {
-    interface IGamerService
+    public interface IGamerService
     {
         //operasyonların interfacei yazıldı
         void Add(Gamer gamer);

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace GameDemo
 {
-    public interface IUserValidationService
+    public interface IOrderService
     {
-        bool Validate(Gamer gamer);
+        void GetOrder(Order order);
     }
 }

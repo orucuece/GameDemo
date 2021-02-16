@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameDemo
 {
-    class Gamer
+    public class Gamer
     {
         public int Id { get; set; }
         public long IdentityNumber { get; set; }

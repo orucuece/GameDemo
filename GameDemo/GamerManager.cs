@@ -7,7 +7,7 @@ namespace GameDemo
     //mikro servis bambaşka bir servis kullanılacak.
     class GamerManager : IGamerService
     {
-        // new'lemek yerine ctor kullanılır.
+        // if you use another manager class in your class, you shouldn't do "new" Instead of you can use ctor.
         IUserValidationService _userValidationService;
 
         public GamerManager(IUserValidationService userValidationService)
@@ -19,23 +19,23 @@ namespace GameDemo
         {
             if (_userValidationService.Validate(gamer)== true)
             {
-                Console.WriteLine("Registered");
+                Console.WriteLine("Gamer is registered");
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("Invalid adding");
             }
             
         }
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine("Kayıt Silindi");
+            Console.WriteLine("Gamer is deleted");
         }
 
         public void Update(Gamer gamer)
         {
-            Console.WriteLine("Kayıt Güncellendi");
+            Console.WriteLine("Updated");
         }
     }
  }

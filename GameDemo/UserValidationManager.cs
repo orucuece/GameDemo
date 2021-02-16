@@ -8,8 +8,8 @@ namespace GameDemo
     {
         public bool Validate(Gamer gamer)
         {
-            if (gamer.YearOfBirth == 1985 && gamer.Name == "Engin" && gamer.Surname == "Demiroğ"
-                && gamer.IdentityNumber==12345)
+            if (gamer.YearOfBirth == 1994 && gamer.Name == "ECE" && gamer.Surname == "ÖRÜCÜ"
+                && gamer.IdentityNumber==00000)
             {
                 return true;
             }
